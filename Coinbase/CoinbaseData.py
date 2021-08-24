@@ -93,7 +93,7 @@ def get_transaction_list(client, account_addresses):
         for tx in txs.data:
             transactions.append({ 'account_id' :accountID, 'address' :address, 'tx_id' :str(tx['id']), 
             'tx_type' :str(tx['type']), 'tx_status' :str(tx['status']), 'tx_amount' :float(tx['ammount']['amount']), 
-            'tx_ammount_currency' : str(tx['amount']['currency']), 'native_ammount' : float(tx['native_amount']['amount']), 'native_amount_currency' : str(tx['native_amount']['currency'])
+            'tx_ammount_currency' : str(tx['amount']['currency']), 'native_ammount' : float(tx['native_amount']['amount']), 'native_amount_currency' : (tx['native_amount']['currency'])
             , 'tx_created_date' : str(tx['created_at']), 'tx_updated_date' : str(tx['updated_at']) })
 
     df_tx_list = pd.DataFrame(transactions)
@@ -106,8 +106,8 @@ def get_transaction_list(client, account_addresses):
 
 
 #def get_transaction(client: Client):
-    "Get one transaction"
-    "store is csv/df"
+  #  "Get one transaction"
+   # "store is csv/df"
 
 
 
@@ -115,7 +115,7 @@ def get_transaction_list(client, account_addresses):
     ""
 
 #def get_ticker():
-    "Get one ticker"
+   # "Get one ticker"
 
 #def get_ticker_list():
-    "Get list of ticker"
+   # "Get list of ticker"
