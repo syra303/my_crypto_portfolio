@@ -112,7 +112,7 @@ def get_transaction_list(client, account_addresses):
 
 
 #def get_balance():
-    ""
+   # ""
 
 #def get_ticker():
    # "Get one ticker"
