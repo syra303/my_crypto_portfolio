@@ -66,7 +66,7 @@ def get_address_list(client, accounts_ids):
 
     #list to store addresses
     addresses = []
-    addresslist = {}
+    
 
     #pull address info from address data
     for id in accounts_ids:

@@ -20,6 +20,7 @@ tot_accounts = cb_accounts['account_id'].count()
 print(f'Total accounts: { tot_accounts}\n')
 
 print(cb_accounts.head())
+print('\n')
 
 cb_addresses, addressesLst = CoinbaseData.get_address_list(cb, accountIDs)
 
