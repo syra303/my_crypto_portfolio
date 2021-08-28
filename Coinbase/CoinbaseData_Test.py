@@ -36,6 +36,26 @@ tot_transactions = cb_tx['tx_id'].count()
 print(f'Total Transactions: {tot_transactions}\n')
 
 print(cb_tx.head())
+print('\n')
+
+cb_buys = CoinbaseData.get_buy_list(cb, accountIDs)
+
+tot_buys = cb_buys['buy_order_id'].count()
+print(f'Total Buys: {tot_buys}\n')
+
+print(cb_buys.head())
+cb_buys.to_csv(r'cb_buy_data.csv', index=False)
+print('\n')
+
+cb_sells = CoinbaseData.get_sell_list(cb, accountIDs)
+
+if cb_sells is None:
+    print('No sells data')
+else:
+    tot_sells = cb_sells['sell_order_id'].count()
+    print(f'Total Sells: {tot_sells}\n')
+
+    print(cb_sells.head())
 
 
 
