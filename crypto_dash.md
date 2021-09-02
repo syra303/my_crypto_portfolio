@@ -61,7 +61,7 @@
 
 ![DCA](project_images/dca_thresholds.png)
 
-- ### As the price of BTC enters a new threshold represented by the color changes that will show you what you should look to do next
+- ### As the price of BTC enters a new threshold represented by the color changes, the user will decide what to do next.
 
 
 - ### Example: as the price enters a red zone that is a signal to the user to begin selling off, weekly.
